@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3abd15301eee391349d0e13a3396f584 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3abd15301eee391349d0e13a3396f584" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3abd15301eee391349d0e13a3396f584 = L.map(
+                "map_3abd15301eee391349d0e13a3396f584",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7509a1e68e624cb6dd27cc99adb216fb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7509a1e68e624cb6dd27cc99adb216fb.addTo(map_3abd15301eee391349d0e13a3396f584);
+        
+    
+            var marker_cluster_3eaea0cb29345c44054cdfae472855be = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_41e464c4d6d11d094c9d43fa41f006e6 = L.marker(
+                [17.666667, -100.0],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_75bf4600866f780f154f733d59b39d4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cf5797e1a6e7ab1f2afd01ff68abd90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba8a6290efae35ffc947151371215eae = $(`<div id="html_ba8a6290efae35ffc947151371215eae" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Guerrero, Mexico<br>     <b>Country:</b> Mexico<br>     <b>Disaster Type:</b> Hurricane<br>     <b>Action Taken:</b> Aware<br>     <b>Notes:</b> Hurricane Flossie     </div>`)[0];
+                popup_9cf5797e1a6e7ab1f2afd01ff68abd90.setContent(html_ba8a6290efae35ffc947151371215eae);
+            
+        
+
+        marker_41e464c4d6d11d094c9d43fa41f006e6.bindPopup(popup_9cf5797e1a6e7ab1f2afd01ff68abd90)
+        ;
+
+        
+    
+    
+                marker_41e464c4d6d11d094c9d43fa41f006e6.setIcon(icon_75bf4600866f780f154f733d59b39d4c);
+            
+    
+            var marker_f931d8f2c3bf0ff7a759ae49d2fac7c1 = L.marker(
+                [33.6874388, -80.4363743],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_374224e2c5bac2aef55dfcaa36ef55f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21cb375e77fa4bda6959b8198cfe14c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd508b038cebf358b0e6db0a04b6628b = $(`<div id="html_fd508b038cebf358b0e6db0a04b6628b" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> South Carolina, USA<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> Tropical Storm Chantal - Carolinas     </div>`)[0];
+                popup_21cb375e77fa4bda6959b8198cfe14c4.setContent(html_fd508b038cebf358b0e6db0a04b6628b);
+            
+        
+
+        marker_f931d8f2c3bf0ff7a759ae49d2fac7c1.bindPopup(popup_21cb375e77fa4bda6959b8198cfe14c4)
+        ;
+
+        
+    
+    
+                marker_f931d8f2c3bf0ff7a759ae49d2fac7c1.setIcon(icon_374224e2c5bac2aef55dfcaa36ef55f1);
+            
+    
+            var marker_0580b9b5515bfee9f541806c450663c6 = L.marker(
+                [55.001251, -125.002441],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_4a40779a8d5c588f3993bff2d093105e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7f72808c0565ead19370aabab9fadcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e11fe623ca59ec831502e7030ce1e2a = $(`<div id="html_0e11fe623ca59ec831502e7030ce1e2a" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> British Columbia, Canada<br>     <b>Country:</b> Canada<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> British Colombia Wildfire     </div>`)[0];
+                popup_a7f72808c0565ead19370aabab9fadcb.setContent(html_0e11fe623ca59ec831502e7030ce1e2a);
+            
+        
+
+        marker_0580b9b5515bfee9f541806c450663c6.bindPopup(popup_a7f72808c0565ead19370aabab9fadcb)
+        ;
+
+        
+    
+    
+                marker_0580b9b5515bfee9f541806c450663c6.setIcon(icon_4a40779a8d5c588f3993bff2d093105e);
+            
+    
+            var marker_58861b34721f31e29238a78d63d24266 = L.marker(
+                [41.8523094, 1.5745043],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_13a925c909af152a0349591f6900f4fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2051dce7d161626a2b1b77fc83031e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cbeabd992626800968312efa6799a8b = $(`<div id="html_5cbeabd992626800968312efa6799a8b" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Catalonia, Spain<br>     <b>Country:</b> Spain<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Catalonia Wildfire     </div>`)[0];
+                popup_a2051dce7d161626a2b1b77fc83031e3.setContent(html_5cbeabd992626800968312efa6799a8b);
+            
+        
+
+        marker_58861b34721f31e29238a78d63d24266.bindPopup(popup_a2051dce7d161626a2b1b77fc83031e3)
+        ;
+
+        
+    
+    
+                marker_58861b34721f31e29238a78d63d24266.setIcon(icon_13a925c909af152a0349591f6900f4fd);
+            
+    
+            var marker_e416af76c3e481b0c707eca502ca24a9 = L.marker(
+                [31.521587, 130.5474077],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_0e7bdce6aa0f2522fc3b1a81cef71f6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aadb01b8e557d1ee8b3c51ad9384fecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40ac79b13492c133f4112a2987af3446 = $(`<div id="html_40ac79b13492c133f4112a2987af3446" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Kagoshima prefecture, Japan<br>     <b>Country:</b> Japan<br>     <b>Disaster Type:</b> Earthquake<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> 5.5 Earthquake     </div>`)[0];
+                popup_aadb01b8e557d1ee8b3c51ad9384fecf.setContent(html_40ac79b13492c133f4112a2987af3446);
+            
+        
+
+        marker_e416af76c3e481b0c707eca502ca24a9.bindPopup(popup_aadb01b8e557d1ee8b3c51ad9384fecf)
+        ;
+
+        
+    
+    
+                marker_e416af76c3e481b0c707eca502ca24a9.setIcon(icon_0e7bdce6aa0f2522fc3b1a81cef71f6f);
+            
+    
+            var marker_cffa60f7f6119d7de506b53bcac7dcc0 = L.marker(
+                [15.0191449, 21.467319],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_90989011c37e3829c0ed9f39ba149b9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68d606fb764bab324dab19a5c5342499 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17b5d07111b79e8663845daad453187a = $(`<div id="html_17b5d07111b79e8663845daad453187a" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Wadi Fira, Chad<br>     <b>Country:</b> Chad<br>     <b>Disaster Type:</b> Other<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> Refugees from Sudan     </div>`)[0];
+                popup_68d606fb764bab324dab19a5c5342499.setContent(html_17b5d07111b79e8663845daad453187a);
+            
+        
+
+        marker_cffa60f7f6119d7de506b53bcac7dcc0.bindPopup(popup_68d606fb764bab324dab19a5c5342499)
+        ;
+
+        
+    
+    
+                marker_cffa60f7f6119d7de506b53bcac7dcc0.setIcon(icon_90989011c37e3829c0ed9f39ba149b9b);
+            
+    
+            var marker_fe2a781162132c99e0d8a69b36354960 = L.marker(
+                [33.712802, 71.2678805],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_af0f7aa554a6724d531e7bd2370e0020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a89002a6e710b9d40981326bfa8743e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfb718bbfd8e96f574982465476ac567 = $(`<div id="html_cfb718bbfd8e96f574982465476ac567" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Khyber Pakhtunkhwa<br>     <b>Country:</b> Pakistan<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> Aware<br>     <b>Notes:</b> KP and Swat Valley      </div>`)[0];
+                popup_a89002a6e710b9d40981326bfa8743e2.setContent(html_cfb718bbfd8e96f574982465476ac567);
+            
+        
+
+        marker_fe2a781162132c99e0d8a69b36354960.bindPopup(popup_a89002a6e710b9d40981326bfa8743e2)
+        ;
+
+        
+    
+    
+                marker_fe2a781162132c99e0d8a69b36354960.setIcon(icon_af0f7aa554a6724d531e7bd2370e0020);
+            
+    
+            var marker_08c9638b27945b93e9b9ab6d4263cf2e = L.marker(
+                [35.3084952, 24.4633423],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_6b7875c6a872b08120bc98562a3adeef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14cd7788efd43b0bc0bb49569ca7df21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6af77a61589aa18c22713eb25283d21 = $(`<div id="html_c6af77a61589aa18c22713eb25283d21" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Crete, Greece<br>     <b>Country:</b> Greece<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> Aware<br>     <b>Notes:</b> Crete Wildfire     </div>`)[0];
+                popup_14cd7788efd43b0bc0bb49569ca7df21.setContent(html_c6af77a61589aa18c22713eb25283d21);
+            
+        
+
+        marker_08c9638b27945b93e9b9ab6d4263cf2e.bindPopup(popup_14cd7788efd43b0bc0bb49569ca7df21)
+        ;
+
+        
+    
+    
+                marker_08c9638b27945b93e9b9ab6d4263cf2e.setIcon(icon_6b7875c6a872b08120bc98562a3adeef);
+            
+    
+            var marker_67866aa3c4a7eb48667f611299fe08c5 = L.marker(
+                [50.9295798, 13.4585052],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_ca8d49d4e5e655c4abe6d35feb6c59d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a861bae124941ded428f45f7a6d8a850 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c20ebb24b1342f29e6947ed90e7b21b = $(`<div id="html_1c20ebb24b1342f29e6947ed90e7b21b" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Saxony, Germany<br>     <b>Country:</b> Germany<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Eastern Germany Wildfire     </div>`)[0];
+                popup_a861bae124941ded428f45f7a6d8a850.setContent(html_1c20ebb24b1342f29e6947ed90e7b21b);
+            
+        
+
+        marker_67866aa3c4a7eb48667f611299fe08c5.bindPopup(popup_a861bae124941ded428f45f7a6d8a850)
+        ;
+
+        
+    
+    
+                marker_67866aa3c4a7eb48667f611299fe08c5.setIcon(icon_ca8d49d4e5e655c4abe6d35feb6c59d6);
+            
+    
+            var marker_e27eb68584fb1522490b3082bccc7e38 = L.marker(
+                [42.061448, 78.1619972],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_9c1e110b575e5989c0a54379e42e26f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88f4bc75609502aecf24945e3110b1be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e68f8bfabb31e88a9d41d5647ba2304 = $(`<div id="html_5e68f8bfabb31e88a9d41d5647ba2304" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Issyk-Kul Region, Kyrgyzstan<br>     <b>Country:</b> Kyrgyzstan<br>     <b>Disaster Type:</b> Earthquake<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> 4.0 Earthquake     </div>`)[0];
+                popup_88f4bc75609502aecf24945e3110b1be.setContent(html_5e68f8bfabb31e88a9d41d5647ba2304);
+            
+        
+
+        marker_e27eb68584fb1522490b3082bccc7e38.bindPopup(popup_88f4bc75609502aecf24945e3110b1be)
+        ;
+
+        
+    
+    
+                marker_e27eb68584fb1522490b3082bccc7e38.setIcon(icon_9c1e110b575e5989c0a54379e42e26f6);
+            
+    
+            var marker_b0bc24a28e98c42c6815bb78dedd1cfe = L.marker(
+                [55.001251, -97.001038],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_a8e1fe2a9fa1e83a189f0e24c1a1757c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f71b98b636164a7c1bf42bd0f84067b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02684f41d593d90dc894ce14d732e1dd = $(`<div id="html_02684f41d593d90dc894ce14d732e1dd" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Manitoba, Canada<br>     <b>Country:</b> Canada<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Manitoba Wildfire     </div>`)[0];
+                popup_1f71b98b636164a7c1bf42bd0f84067b.setContent(html_02684f41d593d90dc894ce14d732e1dd);
+            
+        
+
+        marker_b0bc24a28e98c42c6815bb78dedd1cfe.bindPopup(popup_1f71b98b636164a7c1bf42bd0f84067b)
+        ;
+
+        
+    
+    
+                marker_b0bc24a28e98c42c6815bb78dedd1cfe.setIcon(icon_a8e1fe2a9fa1e83a189f0e24c1a1757c);
+            
+    
+            var marker_289ecdfb09ec53cef082de675b6b1e70 = L.marker(
+                [30.045717, -99.3884839],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_e23064bd9553c838a9cb99e42ffa796f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cd7417371013701b2abd5a7e6f0a123 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b058f096c94509c46f3b009ef60c635 = $(`<div id="html_8b058f096c94509c46f3b009ef60c635" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Kerr County, Texas<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> Responding<br>     <b>Notes:</b> Texas Floods     </div>`)[0];
+                popup_8cd7417371013701b2abd5a7e6f0a123.setContent(html_8b058f096c94509c46f3b009ef60c635);
+            
+        
+
+        marker_289ecdfb09ec53cef082de675b6b1e70.bindPopup(popup_8cd7417371013701b2abd5a7e6f0a123)
+        ;
+
+        
+    
+    
+                marker_289ecdfb09ec53cef082de675b6b1e70.setIcon(icon_e23064bd9553c838a9cb99e42ffa796f);
+            
+    
+            var marker_1974e14421aba96ca441ff5c05428eaa = L.marker(
+                [15.5504104, 120.7434436],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_3392edcb79d14b07c8035c85bbe1cd36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e60da27025f3b4559ca583b404311a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6597bd1c0b972fc59fa36f163b8fd6bf = $(`<div id="html_6597bd1c0b972fc59fa36f163b8fd6bf" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Luzon, Philippines<br>     <b>Country:</b> Philippines<br>     <b>Disaster Type:</b> Typhoon<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> Typhoon Bising/Danas     </div>`)[0];
+                popup_6e60da27025f3b4559ca583b404311a4.setContent(html_6597bd1c0b972fc59fa36f163b8fd6bf);
+            
+        
+
+        marker_1974e14421aba96ca441ff5c05428eaa.bindPopup(popup_6e60da27025f3b4559ca583b404311a4)
+        ;
+
+        
+    
+    
+                marker_1974e14421aba96ca441ff5c05428eaa.setIcon(icon_3392edcb79d14b07c8035c85bbe1cd36);
+            
+    
+            var marker_95ca9ee3b750db948bfe393a7553d260 = L.marker(
+                [28.0, 66.0],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_3fac784d78e74a68b2c09c1f2462461d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e7edfe54554ac12b7608d7cd3870183 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd65152bfc1923badd3898c0c2eb5f7b = $(`<div id="html_bd65152bfc1923badd3898c0c2eb5f7b" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Balochistan, Pakistan<br>     <b>Country:</b> Pakistan<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Monsoon Balochistan     </div>`)[0];
+                popup_8e7edfe54554ac12b7608d7cd3870183.setContent(html_bd65152bfc1923badd3898c0c2eb5f7b);
+            
+        
+
+        marker_95ca9ee3b750db948bfe393a7553d260.bindPopup(popup_8e7edfe54554ac12b7608d7cd3870183)
+        ;
+
+        
+    
+    
+                marker_95ca9ee3b750db948bfe393a7553d260.setIcon(icon_3fac784d78e74a68b2c09c1f2462461d);
+            
+    
+            var marker_f3ef383c563d095920f86f43127653a8 = L.marker(
+                [31.9292352, 77.1828462],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_9b7e6435114f6e714d906a10ac02bfc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c3aea59c8a7e7ded906dfe240713c4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c3012b589e9b2b198de37c246b71e7e = $(`<div id="html_3c3012b589e9b2b198de37c246b71e7e" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Himachal Pradesh, India<br>     <b>Country:</b> India<br>     <b>Disaster Type:</b> Landslide<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Himachal Pradesh Landslide     </div>`)[0];
+                popup_7c3aea59c8a7e7ded906dfe240713c4e.setContent(html_3c3012b589e9b2b198de37c246b71e7e);
+            
+        
+
+        marker_f3ef383c563d095920f86f43127653a8.bindPopup(popup_7c3aea59c8a7e7ded906dfe240713c4e)
+        ;
+
+        
+    
+    
+                marker_f3ef383c563d095920f86f43127653a8.setIcon(icon_9b7e6435114f6e714d906a10ac02bfc4);
+            
+    
+            var marker_5a189164a95c1c33511ae5c4528f8abc = L.marker(
+                [35.3540209, -120.375716],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_2822ee15ee7d551998ce842c40cae832 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd942217df27cb0ffa5c56c1b38a5d51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b4b75cdeb3a07d6b1b401c4d0771921 = $(`<div id="html_4b4b75cdeb3a07d6b1b401c4d0771921" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> San Luis Obispo County, California<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> California Madre Fire     </div>`)[0];
+                popup_cd942217df27cb0ffa5c56c1b38a5d51.setContent(html_4b4b75cdeb3a07d6b1b401c4d0771921);
+            
+        
+
+        marker_5a189164a95c1c33511ae5c4528f8abc.bindPopup(popup_cd942217df27cb0ffa5c56c1b38a5d51)
+        ;
+
+        
+    
+    
+                marker_5a189164a95c1c33511ae5c4528f8abc.setIcon(icon_2822ee15ee7d551998ce842c40cae832);
+            
+    
+            var marker_2a70e3dccc9fd5199364e83d94beed3c = L.marker(
+                [37.3361663, -121.890591],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_6b8b4fa6649de5a6ab0609c1111ee80d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad8047fc983f3681ce741afb66c31c52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5ff3fec76285bb534cb869138dfee17 = $(`<div id="html_f5ff3fec76285bb534cb869138dfee17" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> San Jose, California<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> San Jose Wildfire     </div>`)[0];
+                popup_ad8047fc983f3681ce741afb66c31c52.setContent(html_f5ff3fec76285bb534cb869138dfee17);
+            
+        
+
+        marker_2a70e3dccc9fd5199364e83d94beed3c.bindPopup(popup_ad8047fc983f3681ce741afb66c31c52)
+        ;
+
+        
+    
+    
+                marker_2a70e3dccc9fd5199364e83d94beed3c.setIcon(icon_6b8b4fa6649de5a6ab0609c1111ee80d);
+            
+    
+            var marker_91aaf0230c8504909510203110eae269 = L.marker(
+                [-8.5100369, 120.5981537],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_acb7f29815798102c19e47ab7945d332 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94f8fa6deff58e757a2b24f5f8b76c26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31e29e433d42e78070448cbf02cc33b0 = $(`<div id="html_31e29e433d42e78070448cbf02cc33b0" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Flores, Indonesia<br>     <b>Country:</b> Indonesia<br>     <b>Disaster Type:</b> Volcano<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Mount Lewotobi Laki Laki volcano     </div>`)[0];
+                popup_94f8fa6deff58e757a2b24f5f8b76c26.setContent(html_31e29e433d42e78070448cbf02cc33b0);
+            
+        
+
+        marker_91aaf0230c8504909510203110eae269.bindPopup(popup_94f8fa6deff58e757a2b24f5f8b76c26)
+        ;
+
+        
+    
+    
+                marker_91aaf0230c8504909510203110eae269.setIcon(icon_acb7f29815798102c19e47ab7945d332);
+            
+    
+            var marker_0cde888b79993ff66d6a7697edc77439 = L.marker(
+                [35.6729639, -79.0392919],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_28f046b2a54f342deeef6e97b9fd6b7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f569acf9dcac814bff1f8f003c7288ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a76a9069d6a2ef8a4df983620c3158f = $(`<div id="html_1a76a9069d6a2ef8a4df983620c3158f" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> North Carolina, USA<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Tropical Depression - Carolinas and Mid-Atlantic     </div>`)[0];
+                popup_f569acf9dcac814bff1f8f003c7288ec.setContent(html_1a76a9069d6a2ef8a4df983620c3158f);
+            
+        
+
+        marker_0cde888b79993ff66d6a7697edc77439.bindPopup(popup_f569acf9dcac814bff1f8f003c7288ec)
+        ;
+
+        
+    
+    
+                marker_0cde888b79993ff66d6a7697edc77439.setIcon(icon_28f046b2a54f342deeef6e97b9fd6b7f);
+            
+    
+            var marker_f557f6c2442f3cbdf7f613d34781affd = L.marker(
+                [35.7500047, 35.8645167],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_bc4502ef1286604a6104524dce57b58a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5f5004fc360b97f3d4c1fb373633f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686e1fb573468e09f38abac201a0306c = $(`<div id="html_686e1fb573468e09f38abac201a0306c" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Latakia Province, Syria<br>     <b>Country:</b> Syrian Arab Republic<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> Aware<br>     <b>Notes:</b> Latakia Province Wildfire     </div>`)[0];
+                popup_1c5f5004fc360b97f3d4c1fb373633f6.setContent(html_686e1fb573468e09f38abac201a0306c);
+            
+        
+
+        marker_f557f6c2442f3cbdf7f613d34781affd.bindPopup(popup_1c5f5004fc360b97f3d4c1fb373633f6)
+        ;
+
+        
+    
+    
+                marker_f557f6c2442f3cbdf7f613d34781affd.setIcon(icon_bc4502ef1286604a6104524dce57b58a);
+            
+    
+            var marker_cb0283fcf038977ef34242ba5338b5fe = L.marker(
+                [33.4484367, -112.074141],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_b3af5fb04abf0db9dd065888f0dbe42a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb253a2c7480813a197b09e07b1f737a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_834827dc59765ac2f3e396f3da233ce4 = $(`<div id="html_834827dc59765ac2f3e396f3da233ce4" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Phoenix, Arizona, USA<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Extreme Heat<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Phoenix Extreme Heat Warning     </div>`)[0];
+                popup_eb253a2c7480813a197b09e07b1f737a.setContent(html_834827dc59765ac2f3e396f3da233ce4);
+            
+        
+
+        marker_cb0283fcf038977ef34242ba5338b5fe.bindPopup(popup_eb253a2c7480813a197b09e07b1f737a)
+        ;
+
+        
+    
+    
+                marker_cb0283fcf038977ef34242ba5338b5fe.setIcon(icon_b3af5fb04abf0db9dd065888f0dbe42a);
+            
+    
+            var marker_fbfb3f7698b6ea8b9bc97969ea55e95c = L.marker(
+                [33.9944889, 72.9331737],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_0bf468d00913884f2be32ed7d7e254d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1324e9dcc4723ac17be85e83d43d26b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0be9a619fa7ddfd049a8533e33534b03 = $(`<div id="html_0be9a619fa7ddfd049a8533e33534b03" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Haripur, Pakistan<br>     <b>Country:</b> Pakistan<br>     <b>Disaster Type:</b> Landslide<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Haripur Landslide     </div>`)[0];
+                popup_e1324e9dcc4723ac17be85e83d43d26b.setContent(html_0be9a619fa7ddfd049a8533e33534b03);
+            
+        
+
+        marker_fbfb3f7698b6ea8b9bc97969ea55e95c.bindPopup(popup_e1324e9dcc4723ac17be85e83d43d26b)
+        ;
+
+        
+    
+    
+                marker_fbfb3f7698b6ea8b9bc97969ea55e95c.setIcon(icon_0bf468d00913884f2be32ed7d7e254d6);
+            
+    
+            var marker_ae1af33f1e69fbb00847be0823e3b1d5 = L.marker(
+                [30.0417376, 79.089691],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_03e4e7e2c927257c2a122d7f315d7b68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f92076931c22b0874953e72f6338ea98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f56370e492c8e186c2587fa6952c5cc6 = $(`<div id="html_f56370e492c8e186c2587fa6952c5cc6" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Uttarakhand, India<br>     <b>Country:</b> India<br>     <b>Disaster Type:</b> Landslide<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Uttarakhand Landslide     </div>`)[0];
+                popup_f92076931c22b0874953e72f6338ea98.setContent(html_f56370e492c8e186c2587fa6952c5cc6);
+            
+        
+
+        marker_ae1af33f1e69fbb00847be0823e3b1d5.bindPopup(popup_f92076931c22b0874953e72f6338ea98)
+        ;
+
+        
+    
+    
+                marker_ae1af33f1e69fbb00847be0823e3b1d5.setIcon(icon_03e4e7e2c927257c2a122d7f315d7b68);
+            
+    
+            var marker_9d9176a43966ba8c16bdf41c0a1e4775 = L.marker(
+                [28.8558984, 85.2950291],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_e7ee7e0c81f03ebcd6bbbb799a75a229 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_932ed488bde0eead5e279fb4dc0b1195 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_317553fa9501e40ca599b63f2524c0bb = $(`<div id="html_317553fa9501e40ca599b63f2524c0bb" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Gyirong County, China<br>     <b>Country:</b> China<br>     <b>Disaster Type:</b> Mudslide<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Gyirong Port     </div>`)[0];
+                popup_932ed488bde0eead5e279fb4dc0b1195.setContent(html_317553fa9501e40ca599b63f2524c0bb);
+            
+        
+
+        marker_9d9176a43966ba8c16bdf41c0a1e4775.bindPopup(popup_932ed488bde0eead5e279fb4dc0b1195)
+        ;
+
+        
+    
+    
+                marker_9d9176a43966ba8c16bdf41c0a1e4775.setIcon(icon_e7ee7e0c81f03ebcd6bbbb799a75a229);
+            
+    
+            var marker_a913710560134327643d3e0357ee0fd6 = L.marker(
+                [14.6882476, -90.4859643],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_2874322861f9f424d4e3029e6a67cfea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86d502551e2729c488e52782809d985c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_876521c0ffd988b685046458bf6765c7 = $(`<div id="html_876521c0ffd988b685046458bf6765c7" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Escuintla Department, Guatemala<br>     <b>Country:</b> Guatemala<br>     <b>Disaster Type:</b> Earthquake<br>     <b>Action Taken:</b> Monitoring<br>     <b>Notes:</b> 5.7 Earthquake     </div>`)[0];
+                popup_86d502551e2729c488e52782809d985c.setContent(html_876521c0ffd988b685046458bf6765c7);
+            
+        
+
+        marker_a913710560134327643d3e0357ee0fd6.bindPopup(popup_86d502551e2729c488e52782809d985c)
+        ;
+
+        
+    
+    
+                marker_a913710560134327643d3e0357ee0fd6.setIcon(icon_2874322861f9f424d4e3029e6a67cfea);
+            
+    
+            var marker_1002b7d857cedb6ec0fd082b44da0f95 = L.marker(
+                [33.3315804, -105.673099],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_595a505a2c774b405b10eba3beb0e32b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3764b1f7b6bfe88ca162410bdffec49d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19ce6da6b347bb3a91eb49f7032fe9cd = $(`<div id="html_19ce6da6b347bb3a91eb49f7032fe9cd" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Ruidoso, New Mexico, USA<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> Aware<br>     <b>Notes:</b> New Mexico - Ruidoso     </div>`)[0];
+                popup_3764b1f7b6bfe88ca162410bdffec49d.setContent(html_19ce6da6b347bb3a91eb49f7032fe9cd);
+            
+        
+
+        marker_1002b7d857cedb6ec0fd082b44da0f95.bindPopup(popup_3764b1f7b6bfe88ca162410bdffec49d)
+        ;
+
+        
+    
+    
+                marker_1002b7d857cedb6ec0fd082b44da0f95.setIcon(icon_595a505a2c774b405b10eba3beb0e32b);
+            
+    
+            var marker_fcc7f4a41f7ff7ae8032a8b6e5aa6d06 = L.marker(
+                [43.2961743, 5.3699525],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_1d2640e59ddf5cda6e634af983457b54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_350752425f20745f916b9a0ed076bbdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bd405496fac9fc3d5a91e0dbbfd513d = $(`<div id="html_5bd405496fac9fc3d5a91e0dbbfd513d" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Marseille, France<br>     <b>Country:</b> France<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Marseille Wildfire     </div>`)[0];
+                popup_350752425f20745f916b9a0ed076bbdc.setContent(html_5bd405496fac9fc3d5a91e0dbbfd513d);
+            
+        
+
+        marker_fcc7f4a41f7ff7ae8032a8b6e5aa6d06.bindPopup(popup_350752425f20745f916b9a0ed076bbdc)
+        ;
+
+        
+    
+    
+                marker_fcc7f4a41f7ff7ae8032a8b6e5aa6d06.setIcon(icon_1d2640e59ddf5cda6e634af983457b54);
+            
+    
+            var marker_0e7a0ff7ae5d925e67ad8075aa6fc1ad = L.marker(
+                [36.2130617, -114.4132805],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_01f666851df080490f309c4a26130e6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44841cdd2ebf6b5d45c69f8172081dd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0af6b456e6fe5ccfc569cd8b07daa485 = $(`<div id="html_0af6b456e6fe5ccfc569cd8b07daa485" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Lake Mead, Arizona, USA<br>     <b>Country:</b> United States<br>     <b>Disaster Type:</b> Extreme Heat<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Lake Mead - Arizona and Nevada     </div>`)[0];
+                popup_44841cdd2ebf6b5d45c69f8172081dd1.setContent(html_0af6b456e6fe5ccfc569cd8b07daa485);
+            
+        
+
+        marker_0e7a0ff7ae5d925e67ad8075aa6fc1ad.bindPopup(popup_44841cdd2ebf6b5d45c69f8172081dd1)
+        ;
+
+        
+    
+    
+                marker_0e7a0ff7ae5d925e67ad8075aa6fc1ad.setIcon(icon_01f666851df080490f309c4a26130e6b);
+            
+    
+            var marker_243922003ebfd2c4a1eaa38f6519ab6e = L.marker(
+                [28.0825369, 85.4137968],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_31db0056111acc2cd5101bbd53729a68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f38d6641d4873397d49eb8e569deafbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ec5e28c443e2a1bed449d341fa0f5a2 = $(`<div id="html_5ec5e28c443e2a1bed449d341fa0f5a2" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Gosaikunda, Nepal<br>     <b>Country:</b> Nepal<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Rasuwagadi - Nepal and China Border     </div>`)[0];
+                popup_f38d6641d4873397d49eb8e569deafbb.setContent(html_5ec5e28c443e2a1bed449d341fa0f5a2);
+            
+        
+
+        marker_243922003ebfd2c4a1eaa38f6519ab6e.bindPopup(popup_f38d6641d4873397d49eb8e569deafbb)
+        ;
+
+        
+    
+    
+                marker_243922003ebfd2c4a1eaa38f6519ab6e.setIcon(icon_31db0056111acc2cd5101bbd53729a68);
+            
+    
+            var marker_315cd60b53a449207e623da355402f68 = L.marker(
+                [50.000678, -86.000977],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_a2fc0aeb88023ea9e01f5ab37f2d3df9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b3ec17014bc748ebc2317176f7dc3eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e61cbcbb9a986d54a8ff9ff1434dd80 = $(`<div id="html_5e61cbcbb9a986d54a8ff9ff1434dd80" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Ontario, Canada<br>     <b>Country:</b> Canada<br>     <b>Disaster Type:</b> Outbreak<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Ontario - Legionnaires’ disease     </div>`)[0];
+                popup_8b3ec17014bc748ebc2317176f7dc3eb.setContent(html_5e61cbcbb9a986d54a8ff9ff1434dd80);
+            
+        
+
+        marker_315cd60b53a449207e623da355402f68.bindPopup(popup_8b3ec17014bc748ebc2317176f7dc3eb)
+        ;
+
+        
+    
+    
+                marker_315cd60b53a449207e623da355402f68.setIcon(icon_a2fc0aeb88023ea9e01f5ab37f2d3df9);
+            
+    
+            var marker_88da484c90cc9fc36c830235c524bc3c = L.marker(
+                [10.3528744, 76.5120396],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_3fb51b0ca0a75286a60e90e492836133 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79542b0e33ec2d3593dd7d2e8ce4f9d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_665f199d16bc34d582945ff4abc759b4 = $(`<div id="html_665f199d16bc34d582945ff4abc759b4" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Kerala, India<br>     <b>Country:</b> India<br>     <b>Disaster Type:</b> Outbreak<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Kerala - Nipah Virus     </div>`)[0];
+                popup_79542b0e33ec2d3593dd7d2e8ce4f9d9.setContent(html_665f199d16bc34d582945ff4abc759b4);
+            
+        
+
+        marker_88da484c90cc9fc36c830235c524bc3c.bindPopup(popup_79542b0e33ec2d3593dd7d2e8ce4f9d9)
+        ;
+
+        
+    
+    
+                marker_88da484c90cc9fc36c830235c524bc3c.setIcon(icon_3fb51b0ca0a75286a60e90e492836133);
+            
+    
+            var marker_6e00949b994d40a41cfe70d8f0364f28 = L.marker(
+                [17.6219737, 23.3133676],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_ed8a96e07365ba0f1106f1c73df4491c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93aa5c31ec43e1def91a9f2acb7c8225 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d3fbec5ef0f4b36f6b7934ecf2dd14a = $(`<div id="html_5d3fbec5ef0f4b36f6b7934ecf2dd14a" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Ennedi Est, Chad<br>     <b>Country:</b> Chad<br>     <b>Disaster Type:</b> Extreme Heat<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Wadi Fira and Ennedi Est provinces     </div>`)[0];
+                popup_93aa5c31ec43e1def91a9f2acb7c8225.setContent(html_5d3fbec5ef0f4b36f6b7934ecf2dd14a);
+            
+        
+
+        marker_6e00949b994d40a41cfe70d8f0364f28.bindPopup(popup_93aa5c31ec43e1def91a9f2acb7c8225)
+        ;
+
+        
+    
+    
+                marker_6e00949b994d40a41cfe70d8f0364f28.setIcon(icon_ed8a96e07365ba0f1106f1c73df4491c);
+            
+    
+            var marker_9129d5b494cc3c14160214e7d1cecdc0 = L.marker(
+                [41.6171214, 21.7168387],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_5c8c9ca8689ec820e5b176e0990bc24b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ac1f18e3d2329f9fbaeaeba2c95a0cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_490e11dbc1cd61e25df61231b967d81f = $(`<div id="html_490e11dbc1cd61e25df61231b967d81f" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> North Macedonia<br>     <b>Country:</b> North Macedonia<br>     <b>Disaster Type:</b> Wildfire<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Northern Wildfires     </div>`)[0];
+                popup_8ac1f18e3d2329f9fbaeaeba2c95a0cb.setContent(html_490e11dbc1cd61e25df61231b967d81f);
+            
+        
+
+        marker_9129d5b494cc3c14160214e7d1cecdc0.bindPopup(popup_8ac1f18e3d2329f9fbaeaeba2c95a0cb)
+        ;
+
+        
+    
+    
+                marker_9129d5b494cc3c14160214e7d1cecdc0.setIcon(icon_5c8c9ca8689ec820e5b176e0990bc24b);
+            
+    
+            var marker_5d65fe5ece930afb76da92b54a98594f = L.marker(
+                [7.3505747, 8.7772877],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_59d671422448bc747793c03cdb4a25ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65d5bc369570463d58c632dec289b997 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_910781c061596613ebc2cc4352eae0ad = $(`<div id="html_910781c061596613ebc2cc4352eae0ad" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Benue State, Nigeria<br>     <b>Country:</b> Nigeria<br>     <b>Disaster Type:</b> Other<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Violence in Benue State leading to increase in IDPS     </div>`)[0];
+                popup_65d5bc369570463d58c632dec289b997.setContent(html_910781c061596613ebc2cc4352eae0ad);
+            
+        
+
+        marker_5d65fe5ece930afb76da92b54a98594f.bindPopup(popup_65d5bc369570463d58c632dec289b997)
+        ;
+
+        
+    
+    
+                marker_5d65fe5ece930afb76da92b54a98594f.setIcon(icon_59d671422448bc747793c03cdb4a25ce);
+            
+    
+            var marker_50e92518391a713a5f7144ce63717a90 = L.marker(
+                [23.0127601, 91.4049232],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_8b7e9c4d0a91659ac44a0f3b088a50ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03a26afe6e64076f1f00117f068d654b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46f34d26aeb500e2762c68b9a3d86b2e = $(`<div id="html_46f34d26aeb500e2762c68b9a3d86b2e" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Feni District, Bangladesh<br>     <b>Country:</b> Bangladesh<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Southeastern Bangladesh     </div>`)[0];
+                popup_03a26afe6e64076f1f00117f068d654b.setContent(html_46f34d26aeb500e2762c68b9a3d86b2e);
+            
+        
+
+        marker_50e92518391a713a5f7144ce63717a90.bindPopup(popup_03a26afe6e64076f1f00117f068d654b)
+        ;
+
+        
+    
+    
+                marker_50e92518391a713a5f7144ce63717a90.setIcon(icon_8b7e9c4d0a91659ac44a0f3b088a50ff);
+            
+    
+            var marker_61b74714f8365b18390198a6cb1f3e2a = L.marker(
+                [25.0, 102.0],
+                {
+}
+            ).addTo(marker_cluster_3eaea0cb29345c44054cdfae472855be);
+        
+    
+            var icon_de8905c3cf9dcddc47184a150a98d90d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3c8025ae32259140117fa61a53bc4d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1c4ad46a190aeecdbe9ee9e1ebd6f5f = $(`<div id="html_d1c4ad46a190aeecdbe9ee9e1ebd6f5f" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Yunnan Province, China<br>     <b>Country:</b> China<br>     <b>Disaster Type:</b> Flood<br>     <b>Action Taken:</b> No Action<br>     <b>Notes:</b> Yunnan Province     </div>`)[0];
+                popup_b3c8025ae32259140117fa61a53bc4d5.setContent(html_d1c4ad46a190aeecdbe9ee9e1ebd6f5f);
+            
+        
+
+        marker_61b74714f8365b18390198a6cb1f3e2a.bindPopup(popup_b3c8025ae32259140117fa61a53bc4d5)
+        ;
+
+        
+    
+    
+                marker_61b74714f8365b18390198a6cb1f3e2a.setIcon(icon_de8905c3cf9dcddc47184a150a98d90d);
+            
+    
+            marker_cluster_3eaea0cb29345c44054cdfae472855be.addTo(map_3abd15301eee391349d0e13a3396f584);
+        
+</script>
+</html>
